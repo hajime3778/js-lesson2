@@ -76,41 +76,109 @@
 //   console.log("条件を満たしましたよ！")
 // }
 
-// 複数条件
-const str1 = "ほげほげ";
-const str2 = "ふがふがｓ";
+// // 複数条件
+// const str1 = "ほげほげ";
+// const str2 = "ふがふがｓ";
 
-if (str1 == "ほげほげ") {
-  console.log("str1は ほげほげです。");
+// if (str1 == "ほげほげ") {
+//   console.log("str1は ほげほげです。");
+// }
+// if (str2 == "ふがふが") {
+//   console.log("str2は ふがふがです。");
+// }
+
+// // && 演算子 AND
+// if (str1 == "ほげほげ" && str2 == "ふがふが") {
+//   console.log("str1は ほげほげ かつ str2は ふがふがです。");
+// }
+
+// // || 演算子 OR
+// if (str1 == "ほげほげ" || str2 == "ふがふが") {
+//   console.log("str1は ほげほげ もしくは、 str2は ふがふがです。");
+// }
+
+
+// const city = "岡山";
+
+// switch (city) {
+//   case "東京都":
+//     console.log("tokyo");
+//     break;
+//   case "大阪":
+//     console.log("oosaka");
+//     break;
+//   case "神奈川":
+//     console.log("kanagawa"); 
+//     break;
+//   default:
+//     console.log("知らない県です");
+//     break;
+// }
+
+// 繰り返し処理
+// for (let i = 0; i < 9; i++) {
+//   const foo = i * 2;
+//   console.log(foo);
+// }
+
+// const numRange = [1, 2, 3, 4, 5];
+
+// for (let i = 0; i < numRange.length; i++) {
+//   const value = numRange[i];
+//   console.log(value);
+// }
+
+// for (const num of numRange) {
+//   console.log(num);
+// }
+
+// const newNumRange = [];
+// for (const num of numRange) {
+//   newNumRange.push(num * 2);
+// }
+// console.log(newNumRange);
+
+// const foo = numRange.map((num) => {
+//   return num * 2;
+// });
+
+// console.log(foo);
+
+
+// 関数
+// function sampleFunc() {
+//   const str = "sample";
+//   console.log(str);
+// }
+// const sampleArrow1 = () => {
+//   const str = "sample";
+//   console.log(str);
+// }
+// sampleArrow1();
+
+// 引数あり
+// function sampleFunc2(num, num2, num3) {
+//   const result = num + num2 + num3;
+//   console.log(result);
+// }
+// sampleFunc2(3, 4, 5);
+// const sampleArrow2 = (num, num2, num3) => {
+//   const result = num + num2 + num3;
+//   console.log(result);
+// }
+// sampleArrow2(3,4,5);
+
+// 引数あり & 返り値あり
+function sampleFunc3(num1, num2) {
+  const result = num1 * num2;
+  return result;
 }
-if (str2 == "ふがふが") {
-  console.log("str2は ふがふがです。");
-}
+const res = sampleFunc3(2, 4);
+console.log(res);
+// const sampleArrow3 = (num1, num2) => {
+//   const result = num1 * num2;
+//   return result;
+// }
+// const res = sampleArrow3(2, 4);
+// console.log(res);
 
-// && 演算子 AND
-if (str1 == "ほげほげ" && str2 == "ふがふが") {
-  console.log("str1は ほげほげ かつ str2は ふがふがです。");
-}
-
-// || 演算子 OR
-if (str1 == "ほげほげ" || str2 == "ふがふが") {
-  console.log("str1は ほげほげ もしくは、 str2は ふがふがです。");
-}
-
-
-const city = "岡山";
-
-switch (city) {
-  case "東京都":
-    console.log("tokyo");
-    break;
-  case "大阪":
-    console.log("oosaka");
-    break;
-  case "神奈川":
-    console.log("kanagawa"); 
-    break;
-  default:
-    console.log("知らない県です");
-    break;
-}
